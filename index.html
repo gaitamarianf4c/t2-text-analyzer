@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Frequency Analyzer</title>
+</head>
+<body>
+<main class="text-analyzer">
+  <section class="hero-card">
+    <div class="hero-card-content">
+      <p class="course-label">Human Computer Interaction</p>
+
+      <h1 class="hero-title">
+        Text Frequency Analyzer
+      </h1>
+
+      <p class="hero-description">
+        Upload a text file or paste text manually. The application removes common linking
+        words and displays the most frequent meaningful words.
+      </p>
+    </div>
+  </section>
+
+  <section class="analysis-controls">
+    <label class="form-field">
+      <span class="form-field-label">Upload .txt file</span>
+      <input
+          id="fileInput"
+          class="form-field-control"
+          type="file"
+          accept=".txt,text/plain"
+      />
+    </label>
+
+    <label class="form-field">
+      <span class="form-field-label">Document language</span>
+      <select
+          id="documentLanguage"
+          class="form-field-control"
+      ></select>
+    </label>
+
+    <label class="form-field">
+      <span class="form-field-label">Top words displayed</span>
+      <input
+          id="topLimit"
+          class="form-field-control"
+          type="number"
+          min="5"
+          max="50"
+          value="10"
+      />
+    </label>
+  </section>
+
+  <section class="text-source-card">
+    <label class="form-field">
+      <span class="form-field-label">Text content</span>
+      <textarea
+          id="textInput"
+          class="text-source-input"
+          rows="8"
+          placeholder="Paste your text here or upload a .txt file."
+      ></textarea>
+    </label>
+
+    <div class="analysis-actions">
+      <button
+          id="analyzeButton"
+          class="primary-action"
+          type="button"
+      >
+        Analyze text
+      </button>
+
+      <p id="statusMessage" class="status-message">
+        Waiting for text input.
+      </p>
+    </div>
+  </section>
+
+  <section
+      id="summary"
+      class="metrics-grid"
+      aria-label="Analysis summary"
+  ></section>
+
+  <section class="frequency-chart-card">
+    <div class="section-heading">
+      <h2 class="section-title">Top frequent words</h2>
+      <p class="section-subtitle">
+        A visual overview of the most frequent meaningful words.
+      </p>
+    </div>
+
+    <div class="frequency-chart">
+      <canvas id="wordChart"></canvas>
+    </div>
+  </section>
+
+  <section class="statistics-card">
+    <div class="section-heading">
+      <h2 class="section-title">Full statistics</h2>
+      <p class="section-subtitle">
+        Complete list of detected words, counts and percentages.
+      </p>
+    </div>
+
+    <div class="statistics-table-wrapper">
+      <table class="statistics-table">
+        <thead>
+        <tr>
+          <th>Word</th>
+          <th>Count</th>
+          <th>Percentage</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<footer class="app-footer">
+  <span>Text Frequency Analyzer</span>
+  <span>Human Computer Interaction</span>
+  <span>Gaita Marian Gabriel</span>
+</footer>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>

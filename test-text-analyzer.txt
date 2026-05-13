@@ -1,0 +1,27 @@
+Text de test pentru aplicația Text Frequency Analyzer
+
+Aplicația analizează un document text și calculează frecvența cuvintelor importante.
+În acest document apar multe cuvinte de legătură, dar acestea trebuie ignorate de aplicație.
+Cuvintele precum de, la, pe, cu, în, și, sau, dar, este, sunt nu ar trebui să domine statistica.
+
+Tema acestui laborator este analiza textului.
+Analiza textului ajută utilizatorul să vadă rapid care sunt termenii cei mai frecvenți.
+Un grafic bun face rezultatul mai ușor de înțeles.
+Un tabel bun face rezultatul mai ușor de verificat.
+
+Aplicația trebuie să afișeze topul cuvintelor importante.
+Cuvântul analiză apare de mai multe ori.
+Cuvântul text apare de mai multe ori.
+Cuvântul aplicație apare de mai multe ori.
+Cuvântul grafic apare de mai multe ori.
+Cuvântul rezultat apare de mai multe ori.
+
+Analiză, analiză, analiză, analiză.
+Text, text, text.
+Aplicație, aplicație, aplicație.
+Grafic, grafic.
+Rezultat, rezultat.
+
+Human Computer Interaction este despre interfețe clare.
+O interfață bună trebuie să fie simplă, intuitivă și funcțională.
+Utilizatorul trebuie să poată încărca fișierul, să selecteze limba documentului și să vadă rezultatele imediat.

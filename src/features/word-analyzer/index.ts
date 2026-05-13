@@ -1,0 +1,1 @@
+export { initWordAnalyzerPage } from './wordAnalyzerPage.ts';
